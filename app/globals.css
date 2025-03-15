@@ -50,19 +50,15 @@
 }
 
 @layer base {
-  
-  
   body {
+    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading text-secondary-foreground font-bold;
+  /* Use direct CSS for font families */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    @apply text-secondary-foreground font-bold;
   }
 
   section {

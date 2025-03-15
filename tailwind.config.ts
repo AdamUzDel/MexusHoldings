@@ -48,9 +48,10 @@ const config: Config = {
         ring: 'hsl(var(--ring) / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['var(--default-font)', ...defaultTheme.fontFamily.sans],
-        heading: ['var(--heading-font)', ...defaultTheme.fontFamily.sans],
-        nav: ['var(--nav-font)', ...defaultTheme.fontFamily.sans],
+        // Use explicit font names instead of CSS variables
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        heading: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        nav: ['Lato', ...defaultTheme.fontFamily.sans],
       },
       borderRadius: {
         lg: 'var(--radius)',

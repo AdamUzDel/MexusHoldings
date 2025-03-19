@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import localFont from "next/font/local"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 // Load Emirates-Medium font
 const emiratesMedium = localFont({
@@ -11,8 +13,9 @@ const emiratesMedium = localFont({
 })
 
 export const metadata = {
-  title: "Mexus Holdings International - Coming Soon",
-  description: "We are preparing something amazing and exciting for you. Stay tuned!",
+  title: "Mexus Holdings International",
+  description:
+    "A trusted investment partner managing funds for local and international investors across diverse sectors.",
 }
 
 export default function RootLayout({
@@ -22,9 +25,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${emiratesMedium.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
+      <body className={`${emiratesMedium.variable} min-h-screen flex flex-col`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <SiteHeader />
+          <div className="flex-1">{children}</div>
+          <SiteFooter />
         </ThemeProvider>
       </body>
     </html>

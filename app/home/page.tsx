@@ -1,282 +1,112 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client"
+
+import type React from "react"
+
+import { useState, useEffect } from "react"
+import { Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import CountdownTimer from "@/components/countdown-timer"
+import Image from "next/image"
 
-export default function HomePage() {
+export default function ComingSoonPage() {
+  const [email, setEmail] = useState("")
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    setIsLoaded(true)
+  }, [])
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Handle subscription logic here
+    alert(`Thank you for subscribing with: ${email}`)
+    setEmail("")
+  }
+
   return (
-    <main className="flex-1">
-      {/* Hero Section */}
-      <section className="relative bg-blue-950 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/bg.png?height=800&width=1600"
-            alt="Investment background"
-            fill
-            className="object-cover opacity-20"
-          />
+    <main
+      className={`emirates-font min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-10 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden ${isLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-500`}
+    >
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center relative z-10">
+        {/* Logo */}
+        <div className="mb-8 relative">
+          <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full opacity-75 blur-lg"></div>
+          <div className="relative bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/20">
+            <Image
+              src="/mexus-logo-blue.png"
+              alt="Mexus Holdings International Logo"
+              width={100}
+              height={100}
+              className="rounded-full m-2"
+            />
+          </div>
         </div>
-        <div className="container mx-auto px-4 relative z-10 py-20 md:py-32">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-emirates mb-6 leading-tight">
-                More ways to help you grow your investments
-              </h1>
-              <p className="text-lg text-blue-100 mb-8 max-w-lg">
-                We help investors of all sizes in our priority sectors by offering favorable financial solutions,
-                tailored products, and comprehensive services.
-              </p>
-              <Button asChild size="lg" className="bg-white text-blue-950 hover:bg-blue-100">
-                <Link href="/investors">Investors We Support</Link>
-              </Button>
+
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 font-emirates">
+          MEXUS HOLDINGS INTERNATIONAL
+        </h1>
+
+        <Card className="w-full max-w-3xl bg-white/10 border border-white/20 backdrop-blur-sm mb-8 overflow-hidden shadow-2xl transform hover:scale-[1.01] transition-all duration-300">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10"></div>
+          <CardContent className="p-6 sm:p-10 relative">
+            <h2 className="text-xl sm:text-2xl font-medium mb-6 font-emirates">
+              We are preparing something amazing and exciting for you.
+            </h2>
+
+            <p className="text-lg mb-6 text-blue-100">Special surprise for our subscribers</p>
+
+            <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 font-emirates bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+              Coming soon
+            </h3>
+
+            <div className="flex flex-col items-center mb-10">
+              <CountdownTimer />
+              <p className="text-xl font-bold mt-4 font-emirates">TO LAUNCH</p>
             </div>
-            <div className="relative">
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-600 rounded-tr-3xl"></div>
-              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-600 rounded-bl-3xl"></div>
-              <div className="relative rounded-lg overflow-hidden">
-                <Image
-                  src="/hands-holding-a-plant.jpg?height=600&width=600"
-                  alt="Hands holding a plant"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
+
+            <p className="text-lg mb-10 text-blue-100 max-w-2xl mx-auto">
+              Our website is under construction, but we are ready to go!
+            </p>
+
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <div className="relative flex-grow group">
+                <Mail
+                  className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/50 group-hover:text-white/80 transition-colors duration-200"
+                  size={18}
+                />
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="pl-10 bg-white/20 border-white/30 text-white placeholder:text-white/50 h-12 focus:border-blue-400 focus:ring-blue-400/50 transition-all duration-200"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="bg-gray-900 text-white py-10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-6">
-              <div className="text-gray-400 mb-2">Investment Support</div>
-              <div className="text-3xl md:text-4xl font-bold font-emirates">$50 Million</div>
-            </div>
-            <div className="text-center p-6 border-y md:border-y-0 md:border-x border-gray-700">
-              <div className="text-gray-400 mb-2">Companies Supported</div>
-              <div className="text-3xl md:text-4xl font-bold font-emirates">120+</div>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-gray-400 mb-2">Economic Contribution</div>
-              <div className="text-3xl md:text-4xl font-bold font-emirates">$15 Million</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sectors Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Investment Sectors</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We focus on six key sectors with high growth potential and significant economic impact.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              { name: "Manufacturing", icon: "🏭" },
-              { name: "Hospitality", icon: "🏨" },
-              { name: "Healthcare", icon: "🏥" },
-              { name: "Aviation", icon: "✈️" },
-              { name: "Real Estate", icon: "🏢" },
-              { name: "Oil & Gas", icon: "⛽" },
-            ].map((sector) => (
-              <Link
-                key={sector.name}
-                href={`/sectors/${sector.name.toLowerCase().replace(" & ", "-and-")}`}
-                className="group"
+              <Button
+                type="submit"
+                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white border-none h-12 px-6 font-emirates transition-all duration-200 hover:shadow-lg"
               >
-                <Card className="h-full hover:shadow-lg transition-shadow group-hover:border-blue-300">
-                  <CardContent className="p-6 flex flex-col items-center text-center">
-                    <div className="text-4xl mb-4">{sector.icon}</div>
-                    <h3 className="font-bold mb-2">{sector.name}</h3>
-                    <ChevronRight className="text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Button asChild variant="outline">
-              <Link href="/sectors">
-                Learn More About Our Sectors
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Economic Transformation */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">
-                Driving East Africa&apos;s Economic Transformation
-              </h2>
-              <p className="text-gray-700 mb-6">
-                Mexus Holdings International plays a vital role in East Africa&apos;s economic development by channeling
-                investments into key sectors that drive growth and create jobs.
-              </p>
-              <p className="text-gray-700 mb-8">
-                Our strategic approach to investment management ensures that capital is directed to businesses with the
-                highest potential for growth and impact.
-              </p>
-              <Button asChild>
-                <Link href="/about-us">
-                  Learn About Our Mission
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                Subscribe
               </Button>
+            </form>
+
+            {/* Footer */}
+            <div className="my-8 text-white/60 text-sm">
+              © {new Date().getFullYear()} Mexus Holdings International. All rights reserved.
             </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
-              <div className="relative aspect-video rounded-lg overflow-hidden">
-                <Image
-                  src="/economy-ug.webp?height=400&width=600"
-                  alt="Economic transformation"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Investor Types */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Investment Solutions for Everyone</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Whether you&apos;re a local or international investor, we have tailored solutions to meet your needs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
-                <Image
-                  src="/ug-investors.jpg?height=300&width=600"
-                  alt="Local investors"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">Local Investors</h3>
-                <p className="text-gray-600 mb-4">
-                  For investors based in Uganda and East Africa looking to participate in regional economic growth.
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>Lower minimum investment thresholds</span>
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>Local currency investment options</span>
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>Regular in-person portfolio reviews</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline">
-                  <Link href="/investors/local">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
-                <Image
-                  src="/int-investors.jpg?height=300&width=600"
-                  alt="International investors"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">International Investors</h3>
-                <p className="text-gray-600 mb-4">
-                  For investors from around the world seeking exposure to high-growth East African markets.
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>USD and EUR denominated investments</span>
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>Comprehensive risk management</span>
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                    <span>Digital reporting and virtual meetings</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline">
-                  <Link href="/investors/international">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild>
-              <Link href="/get-started">
-                Start Your Investment Journey
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-blue-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Ready to Grow Your Wealth?</h2>
-              <p className="text-blue-100 mb-8">
-                Join Mexus Holdings International today and benefit from our expertise in managing investments across
-                East Africa&apos;s most promising sectors.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-100">
-                  <Link href="/get-started">Become an Investor</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-800">
-                  <Link href="/contact">Contact Our Team</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative hidden md:block">
-              <div className="absolute -inset-4 bg-blue-700 rounded-lg transform rotate-3"></div>
-              <div className="absolute -inset-4 bg-blue-800 rounded-lg transform -rotate-3"></div>
-              <div className="relative aspect-square rounded-lg overflow-hidden">
-                <Image
-                  src="/HHHHHHHHHH.jpg?height=500&width=500"
-                  alt="Investment growth"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </CardContent>
+        </Card>
+      </div>
     </main>
   )
 }

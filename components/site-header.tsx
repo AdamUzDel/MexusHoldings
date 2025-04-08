@@ -29,15 +29,12 @@ export function SiteHeader() {
               height={40}
               className="h-10 w-auto"
             />
-            <span className="hidden font-emirates text-xl font-bold sm:inline-block">MEXUS</span>
+            <span className="hidden font-emirates text-xl font-bold sm:inline-block">MEXUS HOLDINGS INTERNATIONAL</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavItem href="/sectors" label="Sectors">
               <DropdownMenuItem asChild>
                 <Link href="/sectors/manufacturing">Manufacturing</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/sectors/hospitality">Hospitality</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/sectors/healthcare">Healthcare</Link>
@@ -46,32 +43,31 @@ export function SiteHeader() {
                 <Link href="/sectors/aviation">Aviation</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/sectors/real-estate">Real Estate</Link>
+                <Link href="/sectors/renewables">Renewables</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/sectors/oil-and-gas">Oil & Gas</Link>
+                <Link href="/sectors/food-security">Food Security</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/sectors/advanced-technology">Advanced Technology</Link>
               </DropdownMenuItem>
             </NavItem>
-            <NavItem href="/investors" label="Investors">
-              <DropdownMenuItem asChild>
-                <Link href="/investors/local">Local Investors</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/investors/international">International Investors</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <Link href="/investors/success-stories">Success Stories</Link>
-              </DropdownMenuItem>
-            </NavItem>
+            
             <NavItem href="/solutions" label="Solutions">
               <DropdownMenuItem asChild>
-                <Link href="/solutions/investment-management">Investment Management</Link>
+                <Link href="/solutions/advanced-technology-financing">Advanced Technology Financing</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/solutions/business-monitoring">Business Monitoring</Link>
+                <Link href="/solutions/renewables-and-energy-finance">Renewables and Energy Finance</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/solutions/profit-returns">Profit Returns</Link>
+                <Link href="/solutions/Digitization-finance">Digitization Finance</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/solutions/supply-chain-finance">Supply Chain Finance</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/solutions/agritech-loans">Agritech Loans</Link>
               </DropdownMenuItem>
             </NavItem>
             <NavItem href="/about-us" label="About Us">
@@ -89,9 +85,9 @@ export function SiteHeader() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="hidden md:flex" asChild>
+          {/* <Button variant="outline" className="hidden md:flex" asChild>
             <Link href="/investor-portal">Investor Portal</Link>
-          </Button>
+          </Button> */}
           <Button className="hidden md:flex" asChild>
             <Link href="/get-started">Get Started</Link>
           </Button>

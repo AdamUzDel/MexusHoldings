@@ -72,7 +72,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Investment Sectors</h2>
+            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Business Sectors</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We focus on six key sectors with high growth potential and significant economic impact.
             </p>
@@ -156,7 +156,7 @@ export default function HomePage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Investment Solutions for Everyone</h2>
+            <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Business Solutions for Everyone</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Whether you&apos;re a local or international investor, we have tailored solutions to meet your needs.
             </p>

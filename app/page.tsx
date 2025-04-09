@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, ChevronRight } from "lucide-react"
 import { DualCardSection } from "@/components/home/dual-card-section"
+import { SectorsSliderSection } from "@/components/home/sectors-slider-section"
 
 export default function HomePage() {
   return (
@@ -70,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* Sectors Section */}
-      <section className="py-16 md:py-24">
+      {/* <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Business Sectors</h2>
@@ -113,7 +114,10 @@ export default function HomePage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
+      
+      {/* Sectors Slider Section - Replaced the old grid section */}
+      <SectorsSliderSection />
 
       {/* Economic Transformation */}
       <section className="py-16 bg-gray-50">
@@ -152,6 +156,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* Dual Card Section */}
       <DualCardSection />

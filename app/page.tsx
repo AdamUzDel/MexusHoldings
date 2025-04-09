@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, ChevronRight } from "lucide-react"
+import { DualCardSection } from "@/components/home/dual-card-section"
 
 export default function HomePage() {
   return (
@@ -151,6 +152,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Dual Card Section */}
+      <DualCardSection />
 
       {/* Investor Types */}
       <section className="py-16">

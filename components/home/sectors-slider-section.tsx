@@ -113,7 +113,7 @@ export function SectorsSliderSection() {
           {/* Left column with heading */}
           <div className="lg:col-span-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-emirates text-blue-600 mb-4">
-              Empowering East Africa's economic development
+              Empowering East Africa`&apos;`s economic development
             </h2>
             <p className="text-gray-700 text-lg">We are focusing on enabling a bright and sustainable future economy</p>
 

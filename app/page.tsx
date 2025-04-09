@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { DualCardSection } from "@/components/home/dual-card-section"
 import { SectorsSliderSection } from "@/components/home/sectors-slider-section"
 

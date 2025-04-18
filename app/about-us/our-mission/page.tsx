@@ -33,8 +33,8 @@ export default function OurMissionPage() {
             <div>
               <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Our Mission Statement</h2>
               <p className="text-gray-700 mb-6 text-lg">
-                "To accelerate East Africa's economic development by providing innovative financial solutions and
-                strategic investments that empower businesses, create jobs, and enhance prosperity across the region."
+              &quot;To accelerate East Africa&apos;s economic development by providing innovative financial solutions and
+                strategic investments that empower businesses, create jobs, and enhance prosperity across the region.&quot;
               </p>
               <p className="text-gray-700 mb-8">
                 At Mexus Holdings International, we believe that access to capital and financial expertise is essential
@@ -135,7 +135,7 @@ export default function OurMissionPage() {
                 <h3 className="text-xl font-bold">Drive Economic Diversification</h3>
               </div>
               <p className="text-gray-600">
-                Support the diversification of East Africa's economy by investing in high-potential sectors beyond
+                Support the diversification of East Africa&apos;s economy by investing in high-potential sectors beyond
                 traditional industries, fostering innovation and resilience.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function OurMissionPage() {
               </div>
               <p className="text-gray-600">
                 Expand access to financial services for underserved businesses and sectors, particularly SMEs that form
-                the backbone of East Africa's economy.
+                the backbone of East Africa&apos;s economy.
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export default function OurMissionPage() {
               </div>
               <p className="text-gray-600">
                 Support investments that balance economic growth with environmental sustainability and social
-                responsibility, contributing to East Africa's long-term prosperity.
+                responsibility, contributing to East Africa&apos;s long-term prosperity.
               </p>
             </div>
 
@@ -228,7 +228,7 @@ export default function OurMissionPage() {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Join Us in Our Mission</h2>
             <p className="text-gray-600 mb-8">
-              Whether you're an investor looking for opportunities in East Africa, a business seeking financing, or a
+              Whether you&apos;re an investor looking for opportunities in East Africa, a business seeking financing, or a
               professional interested in joining our team, we invite you to be part of our mission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

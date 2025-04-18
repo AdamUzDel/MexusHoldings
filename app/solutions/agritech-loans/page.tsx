@@ -39,7 +39,7 @@ export default function AgritechLoansPage() {
                 Transforming Agriculture Through Technology
               </h2>
               <p className="text-gray-700 mb-6">
-                Agriculture is a cornerstone of East Africa's economy, and technological innovation is key to increasing
+                Agriculture is a cornerstone of East Africa&apos;s economy, and technological innovation is key to increasing
                 productivity, sustainability, and resilience in the sector. Mexus Holdings International is committed to
                 supporting agritech adoption through specialized financing solutions.
               </p>

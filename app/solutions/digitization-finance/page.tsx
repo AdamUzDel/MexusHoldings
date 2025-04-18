@@ -37,7 +37,7 @@ export default function DigitizationFinancePage() {
             <div>
               <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Enabling Digital Transformation</h2>
               <p className="text-gray-700 mb-6">
-                Digital transformation is essential for businesses to remain competitive in today's rapidly evolving
+                Digital transformation is essential for businesses to remain competitive in today&apos;s rapidly evolving
                 marketplace. Mexus Holdings International is committed to supporting East African businesses in their
                 digitization journey through specialized financing solutions.
               </p>

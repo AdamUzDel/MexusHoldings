@@ -39,7 +39,7 @@ export default function CareersPage() {
               <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Why Join Mexus Holdings</h2>
               <p className="text-gray-700 mb-6">
                 At Mexus Holdings International, we offer more than just a job. We provide an opportunity to make a
-                meaningful impact on East Africa's economic development while building a rewarding career.
+                meaningful impact on East Africa&apos;s economic development while building a rewarding career.
               </p>
               <p className="text-gray-700 mb-8">
                 Our team members enjoy a dynamic work environment that values innovation, collaboration, and personal
@@ -91,7 +91,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Culture</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We've built a culture that empowers our team members to excel while making a positive impact.
+              We&apos;ve built a culture that empowers our team members to excel while making a positive impact.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Open Positions</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore current opportunities to join our team and contribute to East Africa's economic growth.
+              Explore current opportunities to join our team and contribute to East Africa&apos;s economic growth.
             </p>
           </div>
 
@@ -317,7 +317,7 @@ export default function CareersPage() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              Don't see a position that matches your skills? We're always interested in connecting with talented
+              Don&apos;t see a position that matches your skills? We&apos;re always interested in connecting with talented
               professionals who share our vision.
             </p>
             <Button asChild>
@@ -333,7 +333,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Our Application Process</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We've designed a thorough but efficient process to identify candidates who will thrive in our
+              We&apos;ve designed a thorough but efficient process to identify candidates who will thrive in our
               organization.
             </p>
           </div>

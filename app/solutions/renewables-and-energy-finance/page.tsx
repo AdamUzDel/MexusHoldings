@@ -38,7 +38,7 @@ export default function RenewablesAndEnergyFinancePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">
-                Powering East Africa's Sustainable Future
+                Powering East Africa&apos;s Sustainable Future
               </h2>
               <p className="text-gray-700 mb-6">
                 East Africa has abundant renewable energy resources, including solar, wind, hydro, and geothermal. Mexus
@@ -203,7 +203,7 @@ export default function RenewablesAndEnergyFinancePage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-4">Success Stories</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              See how our renewable energy financing has helped transform East Africa's energy landscape.
+              See how our renewable energy financing has helped transform East Africa&apos;s energy landscape.
             </p>
           </div>
 

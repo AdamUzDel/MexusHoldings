@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto prose prose-lg">
             <p>
-              Welcome to Mexus Holdings International. These Terms of Service ("Terms") govern your use of our website
+              Welcome to Mexus Holdings International. These Terms of Service (&quot;Terms&quot;) govern your use of our website
               and services. By accessing our website or using our services, you agree to be bound by these Terms. If you
               do not agree with any part of these Terms, you may not use our website or services.
             </p>
@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
             <p>
               You agree to indemnify, defend, and hold harmless Mexus Holdings International and its officers,
               directors, employees, and agents from and against any claims, liabilities, damages, judgments, awards,
-              losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to your
+              losses, costs, expenses, or fees (including reasonable attorneys&apos; fees) arising out of or relating to your
               violation of these Terms or your use of our services.
             </p>
 
@@ -134,8 +134,8 @@ export default function TermsOfServicePage() {
             <h2>11. Changes to These Terms</h2>
             <p>
               We may update these Terms from time to time to reflect changes in our practices or legal requirements. We
-              will notify you of any material changes by posting the updated Terms on our website with a revised "Last
-              updated" date.
+              will notify you of any material changes by posting the updated Terms on our website with a revised &quot;Last
+              updated&quot; date.
             </p>
             <p>
               Your continued use of our services after the effective date of the revised Terms constitutes your

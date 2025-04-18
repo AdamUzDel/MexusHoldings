@@ -95,14 +95,14 @@ export default function LeadershipPage() {
                     <a
                       href="#"
                       className="p-2 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
-                      aria-label={`${executive.name}'s LinkedIn profile`}
+                      aria-label={`${executive.name}&apos;s LinkedIn profile`}
                     >
                       <Linkedin size={18} className="text-gray-600" />
                     </a>
                     <a
                       href="#"
                       className="p-2 rounded-full bg-gray-100 hover:bg-blue-100 transition-colors"
-                      aria-label={`${executive.name}'s Twitter profile`}
+                      aria-label={`${executive.name}&apos;s Twitter profile`}
                     >
                       <Twitter size={18} className="text-gray-600" />
                     </a>
@@ -247,7 +247,7 @@ export default function LeadershipPage() {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-4xl font-bold font-emirates mb-6">Join Our Team</h2>
             <p className="text-blue-100 mb-8">
-              We're always looking for talented professionals who share our vision and values to join our team and help
+              We&apos;re always looking for talented professionals who share our vision and values to join our team and help
               drive economic growth across East Africa.
             </p>
             <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-100">

@@ -11,7 +11,7 @@ export default function AviationPage() {
         title="Aviation"
         subtitle="Connecting East Africa to the world"
         description="Mexus Holdings International is investing in East Africa's aviation sector to enhance connectivity, improve infrastructure, and create a thriving aviation ecosystem across the region."
-        image="/placeholder.svg?height=600&width=800"
+        image="/25.jpg?height=600&width=800"
         ctaText="Explore aviation opportunities"
         ctaLink="/contact"
       />
@@ -19,7 +19,7 @@ export default function AviationPage() {
       <SectorOverview
         title="Aviation in East Africa"
         description="East Africa's aviation sector is experiencing significant growth, driven by increasing passenger and cargo demand, regional integration, and the strategic location between Africa, the Middle East, and Asia. Mexus Holdings International is supporting this growth through strategic investments in aviation infrastructure, services, and technology to enhance connectivity and operational efficiency."
-        image="/placeholder.svg?height=500&width=700"
+        image="/0664ba89dc336659a258e920130ea3fc83a282f1.jpg?height=500&width=700"
         stats={[
           { value: "$18M+", label: "Invested in Aviation" },
           { value: "12+", label: "Aviation Projects" },
@@ -36,37 +36,37 @@ export default function AviationPage() {
             title: "East Africa Aviation Strategy",
             description:
               "A comprehensive strategy to enhance air connectivity, improve infrastructure, and develop a skilled aviation workforce across East Africa.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Ug-air-ethiopian.jpg?height=300&width=500",
           },
           {
             title: "Airport Development Program",
             description:
               "Investing in the modernization and expansion of airports across East Africa to improve passenger experience and operational efficiency.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/airport-jpg.webp?height=300&width=500",
           },
           {
             title: "East Africa Air Connectivity",
             description:
               "Supporting the expansion of air routes connecting East African cities with each other and with international destinations to enhance mobility and trade.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Cargo_767x608.webp?height=300&width=500",
           },
           {
             title: "Aviation Training Academy",
             description:
               "Establishing training centers to develop skilled aviation professionals including pilots, engineers, air traffic controllers, and cabin crew.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/ssoroti-flying-School.jpg?height=300&width=500",
           },
           {
             title: "Air Cargo Development",
             description:
               "Investing in air cargo infrastructure and services to facilitate trade and support East Africa's export industries.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/1500x900_78024-b767-work-2-1.webp?height=300&width=500",
           },
           {
             title: "Aviation Innovation Hub",
             description:
               "Creating a center for aviation innovation to develop and implement technologies that enhance safety, efficiency, and sustainability.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/DSC08005_1500px_MCA-1200x800.jpg?height=300&width=500",
           },
         ]}
       />

@@ -11,7 +11,7 @@ export default function HealthcarePage() {
         title="Healthcare"
         subtitle="A strong economy is reliant on top of the line healthcare service"
         description="Mexus Holdings International provides support to healthcare companies, hospitals, labs and clinics to modernize and expand across East Africa."
-        image="/placeholder.svg?height=600&width=800"
+        image="/68r5CKl9eHhB74UIfVD3RI3AqBVFP2-metaR3JvdXAgMTE5NzkucG5n-.png?height=600&width=800"
         ctaText="Explore healthcare opportunities"
         ctaLink="/contact"
       />
@@ -19,7 +19,7 @@ export default function HealthcarePage() {
       <SectorOverview
         title="Healthcare in East Africa"
         description="East Africa's healthcare sector is undergoing significant transformation, driven by increasing demand for quality services, technological innovation, and supportive policy frameworks. Mexus Holdings International is playing a pivotal role in this evolution by providing strategic investments that enhance healthcare infrastructure, improve service delivery, and promote innovation."
-        image="/placeholder.svg?height=500&width=700"
+        image="/0GmmwvZXMixHoqQnRYxyqRLdxOTVit-metaaGVhbHRoIDIgMi5qcGc=-.jpg?height=500&width=700"
         stats={[
           { value: "$15M+", label: "Invested in Healthcare" },
           { value: "18+", label: "Healthcare Facilities" },
@@ -36,37 +36,37 @@ export default function HealthcarePage() {
             title: "East Africa Health Sector Strategy",
             description:
               "A comprehensive strategy to enhance healthcare quality, accessibility, and efficiency across East Africa through targeted investments and policy support.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/medical-group-wtih-screen.jpg?height=300&width=500",
           },
           {
             title: "Medical Tourism Program",
             description:
               "Developing world-class healthcare facilities and services to attract medical tourists from across Africa and beyond, creating a new economic opportunity.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/medical-tourism-in-Africa-1536x1129-1.jpg?height=300&width=500",
           },
           {
             title: "East Africa Pharma Initiative",
             description:
               "Supporting the growth of pharmaceutical manufacturing in East Africa to enhance self-sufficiency in essential medicines and medical supplies.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/pharma+report.jpg?height=300&width=500",
           },
           {
             title: "Healthcare Innovation Hub",
             description:
               "Establishing innovation centers focused on developing and implementing healthcare technologies and solutions tailored to East African needs.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Meic-East-Africa.jpg?height=300&width=500",
           },
           {
             title: "East Africa Medical Education",
             description:
               "Investing in medical education and training programs to develop a skilled healthcare workforce capable of delivering quality care across the region.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/world-bank-health-challenge_ces_600x334.jpg?height=300&width=500",
           },
           {
             title: "Rural Healthcare Access",
             description:
               "Expanding healthcare access in underserved rural areas through mobile clinics, telemedicine, and community health worker programs.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Medical-Health-1024x682.webp?height=300&width=500",
           },
         ]}
       />

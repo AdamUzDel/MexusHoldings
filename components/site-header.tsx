@@ -2,20 +2,27 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
+import { usePathname } from "next/navigation"
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  // Close menu when pathname changes (user clicks a link)
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
@@ -29,7 +36,7 @@ export function SiteHeader() {
               height={40}
               className="h-10 w-auto"
             />
-            <span className="hidden font-emirates text-xl font-bold sm:inline-block">MEXUS HOLDINGS INTERNATIONAL</span>
+            <span className="hidden sm:inline-block font-emirates text-xl font-bold">MEXUS HOLDINGS</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavItem href="/sectors" label="Sectors">
@@ -52,7 +59,7 @@ export function SiteHeader() {
                 <Link href="/sectors/advanced-technology">Advanced Technology</Link>
               </DropdownMenuItem>
             </NavItem>
-            
+
             <NavItem href="/solutions" label="Solutions">
               <DropdownMenuItem asChild>
                 <Link href="/solutions/advanced-technology-financing">Advanced Technology Financing</Link>
@@ -85,9 +92,6 @@ export function SiteHeader() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          {/* <Button variant="outline" className="hidden md:flex" asChild>
-            <Link href="/investor-portal">Investor Portal</Link>
-          </Button> */}
           <Button className="hidden md:flex" asChild>
             <Link href="/get-started">Get Started</Link>
           </Button>
@@ -97,29 +101,35 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - slide in from right */}
       <div
         className={cn(
-          "fixed inset-x-0 top-16 z-50 bg-white border-b md:hidden transition-all duration-300 ease-in-out",
-          isMenuOpen ? "max-h-[80vh] overflow-y-auto" : "max-h-0 overflow-hidden",
+          "fixed inset-y-0 right-0 z-50 bg-white border-l shadow-xl md:hidden transition-all duration-300 ease-in-out w-4/5 max-w-xs",
+          isMenuOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
-        <div className="container mx-auto px-4 py-4 space-y-4">
+        <div className="flex justify-end p-4 border-b">
+          <button onClick={toggleMenu} aria-label="Close menu">
+            <X size={24} />
+          </button>
+        </div>
+        <div className="p-4 space-y-4 overflow-y-auto max-h-[calc(100vh-64px)]">
           <MobileNavItem href="/sectors" label="Sectors" />
-          <MobileNavItem href="/investors" label="Investors" />
           <MobileNavItem href="/solutions" label="Solutions" />
           <MobileNavItem href="/about-us" label="About Us" />
-          <MobileNavItem href="/contact" label="Contact" />
+          <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">
+            Contact Us
+          </Link>
           <div className="pt-4 grid gap-2">
-            {/* <Button variant="outline" className="w-full" asChild>
-              <Link href="/investor-portal">Investor Portal</Link>
-            </Button> */}
             <Button className="w-full" asChild>
               <Link href="/get-started">Get Started</Link>
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Overlay when mobile menu is open */}
+      {isMenuOpen && <div className="fixed inset-0 bg-black/20 md:hidden z-40" onClick={() => setIsMenuOpen(false)} />}
     </header>
   )
 }
@@ -138,7 +148,7 @@ function NavItem({ href, label, children }: NavItemProps) {
           {label}
           <ChevronDown size={16} />
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="start" className="w-48">
+        <DropdownMenuContent align="start" className="w-64">
           {children}
         </DropdownMenuContent>
       </DropdownMenu>
@@ -183,24 +193,14 @@ function MobileNavItem({ href, label }: NavItemProps) {
               <Link href="/sectors/food-security" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
                 Food Security
               </Link>
-              <Link href="/sectors/advanced-technology" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+              <Link
+                href="/sectors/advanced-technology"
+                className="block py-1 text-sm text-gray-600 hover:text-blue-700"
+              >
                 Advanced Technology
               </Link>
             </>
           )}
-          {/* {href === "/investors" && (
-            <>
-              <Link href="/investors/local" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Local Investors
-              </Link>
-              <Link href="/investors/international" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                International Investors
-              </Link>
-              <Link href="/investors/success-stories" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Success Stories
-              </Link>
-            </>
-          )} */}
           {href === "/solutions" && (
             <>
               <Link
@@ -209,13 +209,22 @@ function MobileNavItem({ href, label }: NavItemProps) {
               >
                 Advanced Technology Financing
               </Link>
-              <Link href="/solutions/renewables-and-energy-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+              <Link
+                href="/solutions/renewables-and-energy-finance"
+                className="block py-1 text-sm text-gray-600 hover:text-blue-700"
+              >
                 Renewables and Energy Finance
               </Link>
-              <Link href="/solutions/digitization-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+              <Link
+                href="/solutions/digitization-finance"
+                className="block py-1 text-sm text-gray-600 hover:text-blue-700"
+              >
                 Digitization Finance
               </Link>
-              <Link href="/solutions/supply-chain-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+              <Link
+                href="/solutions/supply-chain-finance"
+                className="block py-1 text-sm text-gray-600 hover:text-blue-700"
+              >
                 Supply Chain Finance
               </Link>
               <Link href="/solutions/agritech-loans" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
@@ -241,4 +250,3 @@ function MobileNavItem({ href, label }: NavItemProps) {
     </div>
   )
 }
-

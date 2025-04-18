@@ -61,7 +61,7 @@ export function SiteHeader() {
                 <Link href="/solutions/renewables-and-energy-finance">Renewables and Energy Finance</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/solutions/Digitization-finance">Digitization Finance</Link>
+                <Link href="/solutions/digitization-finance">Digitization Finance</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/solutions/supply-chain-finance">Supply Chain Finance</Link>
@@ -111,9 +111,9 @@ export function SiteHeader() {
           <MobileNavItem href="/about-us" label="About Us" />
           <MobileNavItem href="/contact" label="Contact" />
           <div className="pt-4 grid gap-2">
-            <Button variant="outline" className="w-full" asChild>
+            {/* <Button variant="outline" className="w-full" asChild>
               <Link href="/investor-portal">Investor Portal</Link>
-            </Button>
+            </Button> */}
             <Button className="w-full" asChild>
               <Link href="/get-started">Get Started</Link>
             </Button>
@@ -171,24 +171,24 @@ function MobileNavItem({ href, label }: NavItemProps) {
               <Link href="/sectors/manufacturing" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
                 Manufacturing
               </Link>
-              <Link href="/sectors/hospitality" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Hospitality
-              </Link>
               <Link href="/sectors/healthcare" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
                 Healthcare
               </Link>
               <Link href="/sectors/aviation" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
                 Aviation
               </Link>
-              <Link href="/sectors/real-estate" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Real Estate
+              <Link href="/sectors/renewables" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Renewables
               </Link>
-              <Link href="/sectors/oil-and-gas" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Oil & Gas
+              <Link href="/sectors/food-security" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Food Security
+              </Link>
+              <Link href="/sectors/advanced-technology" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Advanced Technology
               </Link>
             </>
           )}
-          {href === "/investors" && (
+          {/* {href === "/investors" && (
             <>
               <Link href="/investors/local" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
                 Local Investors
@@ -200,23 +200,26 @@ function MobileNavItem({ href, label }: NavItemProps) {
                 Success Stories
               </Link>
             </>
-          )}
+          )} */}
           {href === "/solutions" && (
             <>
               <Link
-                href="/solutions/investment-management"
+                href="/solutions/advanced-technology-financing"
                 className="block py-1 text-sm text-gray-600 hover:text-blue-700"
               >
-                Investment Management
+                Advanced Technology Financing
               </Link>
-              <Link
-                href="/solutions/business-monitoring"
-                className="block py-1 text-sm text-gray-600 hover:text-blue-700"
-              >
-                Business Monitoring
+              <Link href="/solutions/renewables-and-energy-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Renewables and Energy Finance
               </Link>
-              <Link href="/solutions/profit-returns" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
-                Profit Returns
+              <Link href="/solutions/digitization-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Digitization Finance
+              </Link>
+              <Link href="/solutions/supply-chain-finance" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Supply Chain Finance
+              </Link>
+              <Link href="/solutions/agritech-loans" className="block py-1 text-sm text-gray-600 hover:text-blue-700">
+                Agritech Loans
               </Link>
             </>
           )}

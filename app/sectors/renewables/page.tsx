@@ -11,7 +11,7 @@ export default function RenewablesPage() {
         title="Renewables"
         subtitle="Enabling the future sustainability of East Africa"
         description="Mexus Holdings International is supporting the development and implementation of renewable energy solutions across East Africa."
-        image="/placeholder.svg?height=600&width=800"
+        image="/O8iGXKx0JK7LP4tuiwtnP4qmaFiZbi-metaR3JvdXAgMTE5NzkucG5n-.png?height=600&width=800"
         ctaText="Explore renewable energy opportunities"
         ctaLink="/contact"
       />
@@ -19,7 +19,7 @@ export default function RenewablesPage() {
       <SectorOverview
         title="Renewable Energy in East Africa"
         description="East Africa possesses abundant renewable energy resources including solar, wind, hydro, and geothermal potential. Mexus Holdings International is strategically investing in these resources to address the region's growing energy demand, reduce reliance on fossil fuels, and support economic development through reliable, clean energy access."
-        image="/placeholder.svg?height=500&width=700"
+        image="/axbUutmaNaW7nWzwdamtxpx4gKD4Ux-metaMl9zaHV0dGVyc3RvY2tfNzUxMzU4ODc4LmpwZw==-.jpg?height=500&width=700"
         stats={[
           { value: "$20M+", label: "Invested in Renewables" },
           { value: "15+", label: "Renewable Projects" },
@@ -36,37 +36,37 @@ export default function RenewablesPage() {
             title: "East Africa Clean Energy Strategy",
             description:
               "A comprehensive strategy to accelerate the adoption of renewable energy and enhance energy efficiency across all sectors of the East African economy.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/2.jpg?height=300&width=500",
           },
           {
             title: "Solar Energy Program",
             description:
               "Supporting the deployment of solar energy solutions across East Africa, from utility-scale solar farms to distributed rooftop installations.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Solar.jpg?height=300&width=500",
           },
           {
             title: "Wind Energy Development",
             description:
               "Investing in wind energy projects in high-potential areas across East Africa to harness this abundant renewable resource.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/renewable-energy-sa.jpg?height=300&width=500",
           },
           {
             title: "Hydropower Expansion",
             description:
               "Supporting the development of small and medium-scale hydropower projects that provide reliable baseload power while minimizing environmental impact.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/electricity-access.-Bigstock..jpg?height=300&width=500",
           },
           {
             title: "Geothermal Energy Initiative",
             description:
               "Investing in geothermal energy development along the East African Rift Valley, one of the world's richest geothermal regions.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/geothermal.jpg?height=300&width=500",
           },
           {
             title: "Energy Storage Solutions",
             description:
               "Supporting the deployment of energy storage technologies to enhance grid stability and enable higher penetration of intermittent renewable energy sources.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/ESKOM-HEX-BESS-PROJECT-1024x768.jpg?height=300&width=500",
           },
         ]}
       />

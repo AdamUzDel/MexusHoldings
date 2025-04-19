@@ -11,7 +11,7 @@ export default function AdvancedTechnologyPage() {
         title="Advanced Technology"
         subtitle="Powering the future of East Africa"
         description="Mexus Holdings International is accelerating the adoption and integration of future technologies in a wide variety of industries across East Africa."
-        image="/placeholder.svg?height=600&width=800"
+        image="/HKhbHYj6Iog5MtGOWck7RAZzVRUGtF-metaR3JvdXAgMTE5NzkucG5n-.png?height=600&width=800"
         ctaText="Explore technology opportunities"
         ctaLink="/contact"
       />
@@ -19,7 +19,7 @@ export default function AdvancedTechnologyPage() {
       <SectorOverview
         title="Advanced Technology in East Africa"
         description="East Africa is embracing advanced technologies to drive economic diversification, enhance productivity, and create new opportunities across all sectors. Mexus Holdings International is supporting this technological transformation through strategic investments in digital infrastructure, innovative startups, and skills development programs."
-        image="/placeholder.svg?height=500&width=700"
+        image="/85gYMx7sH3IuC1mU769dlcI6uwnVD6-metaVGVjaC1taW4ucG5n-.png?height=500&width=700"
         stats={[
           { value: "$14M+", label: "Invested in Tech" },
           { value: "22+", label: "Tech Startups" },
@@ -36,37 +36,37 @@ export default function AdvancedTechnologyPage() {
             title: "East Africa Digital Economy",
             description:
               "A comprehensive strategy to accelerate digital transformation across all sectors of the East African economy, enhancing productivity and creating new opportunities.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/e43d0f45-564c-4b75-bf28-6039119676b9.jpeg?height=300&width=500",
           },
           {
             title: "Fourth Industrial Revolution",
             description:
               "Supporting the adoption of Industry 4.0 technologies including artificial intelligence, blockchain, and the Internet of Things across East African industries.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/fourth-industrial-revolution-4ir.jpg?height=300&width=500",
           },
           {
             title: "East Africa Science Park",
             description:
               "Establishing innovation hubs and science parks across East Africa to foster research, development, and commercialization of advanced technologies.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/64ab46bb35018faa5ad82ffd_hero-bg.webp?height=300&width=500",
           },
           {
             title: "National Program for Coders",
             description:
               "Developing coding skills among East Africans to build a pipeline of tech talent that can drive digital innovation and economic growth.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/pr_03262025_01.jpg?height=300&width=500",
           },
           {
             title: "East Africa Blockchain Strategy",
             description:
               "Promoting the adoption of blockchain technology across government services and private sector applications to enhance efficiency and transparency.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/What Is Blockchain A Super Simple Guide Anyone Can Understand.png?height=300&width=500",
           },
           {
             title: "East Africa AI Program",
             description:
               "Accelerating the development and deployment of artificial intelligence solutions to address regional challenges and create economic value.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Ai.png?height=300&width=500",
           },
         ]}
       />

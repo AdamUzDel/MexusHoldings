@@ -11,7 +11,7 @@ export default function FoodSecurityPage() {
         title="Food Security"
         subtitle="East Africa's food security strategy"
         description="Mexus Holdings International is helping East Africa become self-sufficient in food production through food and agriculture sector financing."
-        image="/placeholder.svg?height=600&width=800"
+        image="/ch2xu11xkprjyaXw4LVOKV8947NEFt-metaR3JvdXAgMTE5NzkucG5n-.png?height=600&width=800"
         ctaText="Explore food security opportunities"
         ctaLink="/contact"
       />
@@ -19,7 +19,7 @@ export default function FoodSecurityPage() {
       <SectorOverview
         title="Food Security in East Africa"
         description="East Africa has immense agricultural potential but faces challenges in food production, processing, and distribution. Mexus Holdings International is addressing these challenges through strategic investments that enhance productivity, reduce post-harvest losses, and improve market access, contributing to greater food security and economic development across the region."
-        image="/placeholder.svg?height=500&width=700"
+        image="/ye0AkB9VSMvSn6NuM9VXGTaHg6oeJe-metac2h1dHRlcnN0b2NrXzUyNTcyMzMxMy0wNS5qcGc=-.jpg?height=500&width=700"
         stats={[
           { value: "$16M+", label: "Invested in Food Security" },
           { value: "20+", label: "Agricultural Projects" },
@@ -36,37 +36,37 @@ export default function FoodSecurityPage() {
             title: "East Africa Food Security Strategy",
             description:
               "A comprehensive strategy to enhance food production, processing, storage, and distribution across East Africa to achieve greater self-sufficiency.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Food_Security.jpg?height=300&width=500",
           },
           {
             title: "AgriTech Development Program",
             description:
               "Supporting the adoption of agricultural technologies including precision farming, IoT solutions, and data analytics to optimize production and resource use.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Drone-1024x574-1.jpg?height=300&width=500",
           },
           {
             title: "Food Innovation Centers",
             description:
               "Establishing centers focused on food product development, processing technologies, and quality enhancement to add value to agricultural products.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/1590124645650.jpg?height=300&width=500",
           },
           {
             title: "East Africa Food Security Alliance",
             description:
               "A partnership between government, private sector, and research institutions to address food security challenges through collaborative approaches.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/Untitled-design-2-1.png?height=300&width=500",
           },
           {
             title: "Sustainable Agriculture Program",
             description:
               "Promoting environmentally sustainable agricultural practices that enhance productivity while preserving natural resources for future generations.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/2149894700-696x464.jpg?height=300&width=500",
           },
           {
             title: "Food Value Chain Development",
             description:
               "Strengthening connections between producers, processors, distributors, and markets to create efficient and inclusive food value chains.",
-            image: "/placeholder.svg?height=300&width=500",
+            image: "/downtoearth_2025-02-20_lc1za8e4_Agri-africa.avif?height=300&width=500",
           },
         ]}
       />

@@ -19,7 +19,7 @@ export default function AviationPage() {
       <SectorOverview
         title="Aviation in East Africa"
         description="East Africa's aviation sector is experiencing significant growth, driven by increasing passenger and cargo demand, regional integration, and the strategic location between Africa, the Middle East, and Asia. Mexus Holdings International is supporting this growth through strategic investments in aviation infrastructure, services, and technology to enhance connectivity and operational efficiency."
-        image="/0664ba89dc336659a258e920130ea3fc83a282f1.jpg?height=500&width=700"
+        image="/Ug-air-ethiopian.jpg?height=500&width=700"
         stats={[
           { value: "$18M+", label: "Invested in Aviation" },
           { value: "12+", label: "Aviation Projects" },

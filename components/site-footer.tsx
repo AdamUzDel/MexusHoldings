@@ -50,11 +50,11 @@ export function SiteFooter() {
                   Sectors
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/investors" className="text-blue-200 hover:text-white transition-colors">
                   Investors
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/solutions" className="text-blue-200 hover:text-white transition-colors">
                   Solutions
@@ -70,11 +70,11 @@ export function SiteFooter() {
                   Contact
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/investor-portal" className="text-blue-200 hover:text-white transition-colors">
                   Investor Portal
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -84,11 +84,6 @@ export function SiteFooter() {
               <li>
                 <Link href="/sectors/manufacturing" className="text-blue-200 hover:text-white transition-colors">
                   Manufacturing
-                </Link>
-              </li>
-              <li>
-                <Link href="/sectors/hospitality" className="text-blue-200 hover:text-white transition-colors">
-                  Hospitality
                 </Link>
               </li>
               <li>
@@ -102,13 +97,18 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/sectors/real-estate" className="text-blue-200 hover:text-white transition-colors">
-                  Real Estate
+                <Link href="/sectors/renewables" className="text-blue-200 hover:text-white transition-colors">
+                  Renewables
                 </Link>
               </li>
               <li>
-                <Link href="/sectors/oil-and-gas" className="text-blue-200 hover:text-white transition-colors">
-                  Oil & Gas
+                <Link href="/sectors/food-security" className="text-blue-200 hover:text-white transition-colors">
+                  Food Security
+                </Link>
+              </li>
+              <li>
+                <Link href="/sectors/advanced-technology" className="text-blue-200 hover:text-white transition-colors">
+                  Advanced Technology
                 </Link>
               </li>
             </ul>

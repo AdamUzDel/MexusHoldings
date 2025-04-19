@@ -36,7 +36,7 @@ export function SiteHeader() {
               height={40}
               className="h-10 w-auto"
             />
-            <span className="hidden sm:inline-block font-emirates text-xl font-bold">MEXUS HOLDINGS</span>
+            <span className="inline-block font-emirates text-xl font-bold">MEXUS HOLDINGS</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavItem href="/sectors" label="Sectors">

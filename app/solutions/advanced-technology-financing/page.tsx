@@ -10,7 +10,7 @@ export default function AdvancedTechnologyFinancingPage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/32dLegLC7fNUbz77Nrg90ygN5BIFdF-metaam9iLXZhY2FuY2llcy5wbmc=-.png?height=800&width=1600"
             alt="Advanced Technology Financing"
             fill
             className="object-cover opacity-20"
@@ -53,7 +53,7 @@ export default function AdvancedTechnologyFinancingPage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/3hNR1n5joqIhc9nwyOBKfqZtsU52RX-metaYWR2YW5jZWR0ZWNoX2ZpbmFuY2UtbWluLnBuZw==-.png?height=400&width=600"
                   alt="Advanced technology"
                   fill
                   className="object-cover"
@@ -180,7 +180,7 @@ export default function AdvancedTechnologyFinancingPage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/fintech-data.jpg?height=400&width=600"
                   alt="Technology financing benefits"
                   fill
                   className="object-cover"
@@ -207,19 +207,19 @@ export default function AdvancedTechnologyFinancingPage() {
                 title: "Manufacturing Automation",
                 description:
                   "Financed a complete factory automation system for a leading manufacturer, resulting in 40% productivity increase.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/east-african-manufacturers-association-1-1647010715.profileImage.2x-jpg-webp.webp",
               },
               {
                 title: "Healthcare AI Implementation",
                 description:
                   "Provided financing for AI diagnostic tools at a regional hospital network, improving diagnostic accuracy by 30%.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/AdobeStock_941276637.jpeg?height=200&width=300",
               },
               {
                 title: "Agricultural IoT Network",
                 description:
                   "Financed an IoT sensor network for a large agricultural cooperative, reducing water usage by 25% and increasing yields.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/image_6c985c52acc5278375c8b74a82b91f7c-scaled.jpg?height=200&width=300",
               },
             ].map((case_study, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">

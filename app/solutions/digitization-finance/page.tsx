@@ -10,7 +10,7 @@ export default function DigitizationFinancePage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/evolution-of-financial-inclusion-in-east-africa.png?height=800&width=1600"
             alt="Digitization Finance"
             fill
             className="object-cover opacity-20"
@@ -51,7 +51,7 @@ export default function DigitizationFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Digital_Transformation.jpg?height=400&width=600"
                   alt="Digital transformation"
                   fill
                   className="object-cover"
@@ -184,7 +184,7 @@ export default function DigitizationFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Mobile-money-transfer..jpg?height=400&width=600"
                   alt="Digitization financing benefits"
                   fill
                   className="object-cover"
@@ -211,19 +211,19 @@ export default function DigitizationFinancePage() {
                 title: "Retail Digital Transformation",
                 description:
                   "Financed a comprehensive digital transformation for a retail chain, including e-commerce platform and inventory management system.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/IndustryPlaybookRetail12842022145832.jpg?height=200&width=300",
               },
               {
                 title: "Financial Services Digitization",
                 description:
                   "Provided financing for a microfinance institution to implement digital lending platforms and mobile banking services.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/momo.jpg?height=200&width=300",
               },
               {
                 title: "Manufacturing Process Digitization",
                 description:
                   "Financed the implementation of digital process control and monitoring systems for a manufacturing company.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/Africa-manufacturing.webp?height=200&width=300",
               },
             ].map((case_study, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">

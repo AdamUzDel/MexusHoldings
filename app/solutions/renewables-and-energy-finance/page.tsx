@@ -10,7 +10,7 @@ export default function RenewablesAndEnergyFinancePage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/32dLegLC7fNUbz77Nrg90ygN5BIFdF-metaam9iLXZhY2FuY2llcy5wbmc=-.png?height=800&width=1600"
             alt="Renewables and Energy Finance"
             fill
             className="object-cover opacity-20"
@@ -55,7 +55,7 @@ export default function RenewablesAndEnergyFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/axbUutmaNaW7nWzwdamtxpx4gKD4Ux-metaMl9zaHV0dGVyc3RvY2tfNzUxMzU4ODc4LmpwZw==-.jpg?height=400&width=600"
                   alt="Renewable energy"
                   fill
                   className="object-cover"
@@ -186,7 +186,7 @@ export default function RenewablesAndEnergyFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/GettyImages-africa-energy-1.jpg?height=400&width=600"
                   alt="Energy financing benefits"
                   fill
                   className="object-cover"
@@ -213,19 +213,19 @@ export default function RenewablesAndEnergyFinancePage() {
                 title: "Solar Mini-Grid Network",
                 description:
                   "Financed a network of solar mini-grids providing electricity to 15 rural communities, benefiting over 50,000 people.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/Solar.jpg?height=200&width=300",
               },
               {
                 title: "Commercial Solar Installation",
                 description:
                   "Provided financing for a 2MW solar installation at a manufacturing facility, reducing energy costs by 40%.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/Home-Solar-System-Installation-Kenya-768x416.jpg?height=200&width=300",
               },
               {
                 title: "Hydropower Development",
                 description:
                   "Financed a 5MW run-of-river hydropower project providing reliable electricity to a regional grid.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/hydropower_plants-e1490338499455.jpg?height=200&width=300",
               },
             ].map((case_study, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">

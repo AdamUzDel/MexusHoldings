@@ -9,7 +9,7 @@ export default function OurMissionPage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/investment.jpg?height=800&width=1600"
             alt="Our Mission"
             fill
             className="object-cover opacity-20"
@@ -45,7 +45,7 @@ export default function OurMissionPage() {
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=400&width=600" alt="Our mission" fill className="object-cover" />
+                <Image src="/Meic-East-Africa.jpg?height=400&width=600" alt="Our mission" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function OurMissionPage() {
               <div className="absolute -inset-4 bg-blue-800 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Photo-story2.jpg?height=400&width=600"
                   alt="Vision for East Africa"
                   fill
                   className="object-cover"

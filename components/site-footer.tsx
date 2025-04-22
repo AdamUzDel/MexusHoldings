@@ -124,7 +124,7 @@ export function SiteFooter() {
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-blue-300 flex-shrink-0" />
                 <a href="tel:+256700123456" className="text-blue-200 hover:text-white transition-colors">
-                  +256 700 123 456
+                  +256 772972249 / +256 705275130
                 </a>
               </li>
               <li className="flex items-center">

@@ -11,7 +11,7 @@ export default function CareersPage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/careers.jpg?height=800&width=1600"
             alt="Careers at Mexus Holdings"
             fill
             className="object-cover opacity-20"
@@ -74,7 +74,7 @@ export default function CareersPage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/careers-why-join.jpg?height=400&width=600"
                   alt="Team members collaborating"
                   fill
                   className="object-cover"
@@ -99,7 +99,7 @@ export default function CareersPage() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/innovation-driven.png?height=200&width=300"
                   alt="Innovation culture"
                   fill
                   className="object-cover"
@@ -117,7 +117,7 @@ export default function CareersPage() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/collaborative-env.webp?height=200&width=300"
                   alt="Collaborative environment"
                   fill
                   className="object-cover"
@@ -134,7 +134,7 @@ export default function CareersPage() {
 
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
-                <Image src="/placeholder.svg?height=200&width=300" alt="Impact-focused" fill className="object-cover" />
+                <Image src="/impact-focused.jpg?height=200&width=300" alt="Impact-focused" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">Impact-Focused</h3>

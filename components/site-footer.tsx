@@ -119,7 +119,10 @@ export function SiteFooter() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-blue-300 flex-shrink-0 mt-1" />
-                <span className="text-blue-200">Kampala Business Center, Plot 42, Nakasero Road, Kampala, Uganda</span>
+                <span className="text-blue-200">
+                  P.O. Box 5514, Dubai, UAE. Levels 20, 48 Burj Gate Towers
+                  Sheikh Zayed Rd - Dubai - United Arab Emirates
+                </span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-blue-300 flex-shrink-0" />
@@ -130,7 +133,7 @@ export function SiteFooter() {
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-blue-300 flex-shrink-0" />
                 <a href="mailto:info@mexusholdings.com" className="text-blue-200 hover:text-white transition-colors">
-                  info@mexusholdings.com
+                  chairman@mexusholdings.com 
                 </a>
               </li>
             </ul>

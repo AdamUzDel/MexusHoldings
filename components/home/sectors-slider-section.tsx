@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronRight, ChevronLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 

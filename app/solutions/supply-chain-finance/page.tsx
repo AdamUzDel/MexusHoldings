@@ -10,7 +10,7 @@ export default function SupplyChainFinancePage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/supplychain.avif?height=800&width=1600"
             alt="Supply Chain Finance"
             fill
             className="object-cover opacity-20"
@@ -51,7 +51,7 @@ export default function SupplyChainFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/responsable-supply-chain.1.0.jpg?height=400&width=600"
                   alt="Supply chain finance"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function SupplyChainFinancePage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/The-Benefits-of-a-Consistent-Supply-Chain-CHAS-blog.jpeg?height=400&width=600"
                   alt="Supply chain financing benefits"
                   fill
                   className="object-cover"
@@ -210,19 +210,19 @@ export default function SupplyChainFinancePage() {
                 title: "Agricultural Supply Chain",
                 description:
                   "Provided financing across an agricultural supply chain, from farmers to processors to distributors, improving efficiency and reducing costs.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/1698134617271.png?height=200&width=300",
               },
               {
                 title: "Manufacturing Supplier Network",
                 description:
                   "Implemented a supplier finance program for a manufacturing company, strengthening relationships with 50+ suppliers.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/GettyImages-1036899652.jpg?height=200&width=300",
               },
               {
                 title: "Retail Distribution Network",
                 description:
                   "Financed inventory and distribution for a retail network, reducing stockouts by 30% and improving sales.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/Supply-Chain-Management-for-Businesses.webp?height=200&width=300",
               },
             ].map((case_study, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">

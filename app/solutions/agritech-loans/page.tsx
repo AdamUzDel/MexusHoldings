@@ -10,7 +10,7 @@ export default function AgritechLoansPage() {
       <section className="relative bg-blue-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/agritech-hero.jpg?height=800&width=1600"
             alt="Agritech Loans"
             fill
             className="object-cover opacity-20"
@@ -53,7 +53,7 @@ export default function AgritechLoansPage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/agri2.jpg?height=400&width=600"
                   alt="Agricultural technology"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function AgritechLoansPage() {
               <div className="absolute -inset-4 bg-blue-100 rounded-lg transform -rotate-3"></div>
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/agri3.png?height=400&width=600"
                   alt="Agritech financing benefits"
                   fill
                   className="object-cover"
@@ -210,19 +210,19 @@ export default function AgritechLoansPage() {
                 title: "Precision Farming Cooperative",
                 description:
                   "Financed precision agriculture technology for a cooperative of 500 smallholder farmers, increasing yields by 35%.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/agri4.jpg?height=200&width=300",
               },
               {
                 title: "Smart Irrigation Project",
                 description:
                   "Provided financing for a smart irrigation system covering 1,000 hectares, reducing water usage by 40% while improving crop quality.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/agri5.jpg?height=200&width=300",
               },
               {
                 title: "Vertical Farming Venture",
                 description:
                   "Financed a vertical farming operation in an urban area, producing high-value crops year-round with 90% less water than conventional farming.",
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/vertical-farming.jpg?height=200&width=300",
               },
             ].map((case_study, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">

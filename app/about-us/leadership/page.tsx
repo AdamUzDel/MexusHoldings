@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Twitter } from "lucide-react"
+// import { Card, CardContent } from "@/components/ui/card"
+// import { Linkedin, Twitter } from "lucide-react"
 
 export default function LeadershipPage() {
   return (

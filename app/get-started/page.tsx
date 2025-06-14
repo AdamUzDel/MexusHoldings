@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import axios from "axios"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -12,10 +13,17 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { CheckCircle, Loader2, AlertCircle } from "lucide-react"
 
 export default function GetStartedPage() {
   const [step, setStep] = useState(1)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null
+    message: string
+  }>({ type: null, message: "" })
+
   const [formData, setFormData] = useState({
     investorType: "",
     name: "",
@@ -59,11 +67,51 @@ export default function GetStartedPage() {
     setStep((prev) => prev - 1)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission logic here
-    console.log("Form submitted:", formData)
-    nextStep()
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: "" })
+
+    try {
+      // Prepare the data for Formspree
+      const submissionData = {
+        investorType: formData.investorType,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        country: formData.country,
+        investmentAmount: formData.investmentAmount,
+        preferredSectors: formData.preferredSectors.join(", "),
+        additionalInfo: formData.additionalInfo,
+        _subject: `New Investment Application - ${formData.investorType} Investor`,
+        _replyto: formData.email,
+      }
+
+      // Submit to Formspree (you'll need to create a separate endpoint for investment forms)
+      await axios.post("https://formspree.io/f/mzzggzvw", submissionData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+      setSubmitStatus({
+        type: "success",
+        message: "Your investment application has been submitted successfully!",
+      })
+
+      // Move to thank you step after successful submission
+      setTimeout(() => {
+        nextStep()
+      }, 2000)
+    } catch (error) {
+      console.error("Error submitting investment form:", error)
+      setSubmitStatus({
+        type: "error",
+        message: "There was an error submitting your application. Please try again.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -159,6 +207,7 @@ export default function GetStartedPage() {
                             placeholder="Your full name"
                             value={formData.name}
                             onChange={handleChange}
+                            disabled={isSubmitting}
                             required
                           />
                         </div>
@@ -171,6 +220,7 @@ export default function GetStartedPage() {
                             placeholder="Your email address"
                             value={formData.email}
                             onChange={handleChange}
+                            disabled={isSubmitting}
                             required
                           />
                         </div>
@@ -185,6 +235,7 @@ export default function GetStartedPage() {
                             placeholder="Your phone number"
                             value={formData.phone}
                             onChange={handleChange}
+                            disabled={isSubmitting}
                             required
                           />
                         </div>
@@ -193,6 +244,7 @@ export default function GetStartedPage() {
                           <Select
                             value={formData.country}
                             onValueChange={(value) => handleSelectChange("country", value)}
+                            disabled={isSubmitting}
                           >
                             <SelectTrigger>
                               <SelectValue placeholder="Select your country" />
@@ -212,12 +264,14 @@ export default function GetStartedPage() {
                     </form>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <Button variant="outline" onClick={prevStep}>
+                    <Button variant="outline" onClick={prevStep} disabled={isSubmitting}>
                       Back
                     </Button>
                     <Button
                       onClick={nextStep}
-                      disabled={!formData.name || !formData.email || !formData.phone || !formData.country}
+                      disabled={
+                        !formData.name || !formData.email || !formData.phone || !formData.country || isSubmitting
+                      }
                     >
                       Continue
                     </Button>
@@ -247,6 +301,7 @@ export default function GetStartedPage() {
                         <Select
                           value={formData.investmentAmount}
                           onValueChange={(value) => handleSelectChange("investmentAmount", value)}
+                          disabled={isSubmitting}
                         >
                           <SelectTrigger>
                             <SelectValue placeholder="Select investment amount" />
@@ -274,8 +329,8 @@ export default function GetStartedPage() {
                                   (formData.preferredSectors as string[]).includes(sector)
                                     ? "border-blue-600 bg-blue-50"
                                     : "border-gray-200 hover:border-blue-300"
-                                }`}
-                                onClick={() => handleSectorToggle(sector)}
+                                } ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}
+                                onClick={() => !isSubmitting && handleSectorToggle(sector)}
                               >
                                 <div
                                   className={`w-5 h-5 rounded-full mr-3 flex items-center justify-center ${
@@ -304,19 +359,50 @@ export default function GetStartedPage() {
                           rows={4}
                           value={formData.additionalInfo}
                           onChange={handleChange}
+                          disabled={isSubmitting}
                         />
                       </div>
+
+                      {submitStatus.type && (
+                        <Alert
+                          className={
+                            submitStatus.type === "success"
+                              ? "border-green-200 bg-green-50"
+                              : "border-red-200 bg-red-50"
+                          }
+                        >
+                          {submitStatus.type === "success" ? (
+                            <CheckCircle className="h-4 w-4 text-green-600" />
+                          ) : (
+                            <AlertCircle className="h-4 w-4 text-red-600" />
+                          )}
+                          <AlertDescription
+                            className={submitStatus.type === "success" ? "text-green-800" : "text-red-800"}
+                          >
+                            {submitStatus.message}
+                          </AlertDescription>
+                        </Alert>
+                      )}
                     </form>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <Button variant="outline" onClick={prevStep}>
+                    <Button variant="outline" onClick={prevStep} disabled={isSubmitting}>
                       Back
                     </Button>
                     <Button
                       onClick={handleSubmit}
-                      disabled={!formData.investmentAmount || !(formData.preferredSectors as string[]).length}
+                      disabled={
+                        !formData.investmentAmount || !(formData.preferredSectors as string[]).length || isSubmitting
+                      }
                     >
-                      Submit
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Submitting...
+                        </>
+                      ) : (
+                        "Submit Application"
+                      )}
                     </Button>
                   </CardFooter>
                 </Card>
@@ -330,8 +416,8 @@ export default function GetStartedPage() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold font-emirates mb-4">Thank You for Your Interest!</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-                  We&apos;ve received your information and a member of our investment team will contact you within 24-48
-                  hours to discuss the next steps in your investment journey.
+                  We&apos;ve received your investment application and a member of our investment team will contact you
+                  within 24-48 hours to discuss the next steps in your investment journey.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" variant="outline">
@@ -406,4 +492,3 @@ export default function GetStartedPage() {
     </main>
   )
 }
-

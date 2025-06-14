@@ -95,23 +95,6 @@ export default function ContactPage() {
                 explore partnership opportunities, we&apos;re here to help.
               </p>
 
-              {submitStatus.type && (
-                <Alert
-                  className={`mb-6 ${
-                    submitStatus.type === "success"
-                      ? "bg-green-50 text-green-800 border-green-200"
-                      : "bg-red-50 text-red-800 border-red-200"
-                  }`}
-                >
-                  {submitStatus.type === "success" ? (
-                    <CheckCircle className="h-5 w-5 mr-2" />
-                  ) : (
-                    <AlertCircle className="h-5 w-5 mr-2" />
-                  )}
-                  <AlertDescription>{submitStatus.message}</AlertDescription>
-                </Alert>
-              )}
-
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -202,6 +185,24 @@ export default function ContactPage() {
                   )}
                 </Button>
               </form>
+
+              {submitStatus.type && (
+                <Alert
+                  className={`mb-6 ${
+                    submitStatus.type === "success"
+                      ? "bg-green-50 text-green-800 border-green-200"
+                      : "bg-red-50 text-red-800 border-red-200"
+                  }`}
+                >
+                  {submitStatus.type === "success" ? (
+                    <CheckCircle className="h-5 w-5 mr-2" />
+                  ) : (
+                    <AlertCircle className="h-5 w-5 mr-2" />
+                  )}
+                  <AlertDescription>{submitStatus.message}</AlertDescription>
+                </Alert>
+              )}
+              
             </div>
 
             <div>
@@ -224,11 +225,11 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600">
-                      Kampala Business Center
+                      P.O. Box 5514, Dubai, UAE. 
                       <br />
-                      Plot 42, Nakasero Road
+                      Levels 20, 48 Burj Gate Towers Sheikh Zayed Rd
                       <br />
-                      Kampala, Uganda
+                      Dubai - United Arab Emirates
                     </p>
                   </CardContent>
                 </Card>

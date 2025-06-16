@@ -44,7 +44,7 @@ export function DualCardSection() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-blue-600 mb-4 font-emirates">
-                If you`&apos;`re innovating, step into our Hub
+                If you&apos;re innovating, step into our Hub
               </h3>
               <span className="inline-flex items-center text-blue-600 font-medium">
                 View our Innovation Hub

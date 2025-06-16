@@ -116,37 +116,38 @@ export default function LeadershipPage() {
               <Image className="object-cover w-full rounded-t-lg md:h-auto md:w-auto md:rounded-none md:rounded-s-lg" width={400} height={400} src="/mexus-arnold.jpg" alt=""/>
               <div className="flex flex-col justify-between p-4 leading-normal">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">President & Founder</h5>
+                  <h6 className="mb-2 text-l font-bold tracking-tight text-gray-500 dark:text-white">WELCOME TO MHI</h6>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  <b>WELCOME TO MHI</b><br></br>
-
-                  It gives me great pleasure to welcome you to the world of Mexus Holdings International (MHI). Here you will find a comprehensive, 
-                  in-depth review of our company, reflecting the pride of 8,000 global employees take in our ongoing growth and current success. 
-                  It also conveys our sense of mission and vision—to become the preferred world leader in country-centric economic business transformation solutions.
-
-                  Today, change is everywhere. Our customer&apos;s markets are evolving rapidly in response to volatile raw material prices, new feedstocks, 
-                  and new manufacturing trends. Sustainability is often the spur, driving demand for better, cleaner and more-efficient products and ways of doing things.
-
-                  For companies that can see potential in these challenges, this is a good time to be in business. From its foundation in 2001, MHI has 
-                  sought to adapt quickly to customer needs and requirements. Our tradition of ingenuity has driven continuous improvement in the way we operate as well 
-                  as a relentless quest for sustainable growth. 
-
-                  Today, MHI is transforming itself to take advantage of the latest wave of change. We are reshaping our business units to ensure they 
-                  are equipped to take advantage of emerging trends in growing markets. These include transportation, electronics, agri-nutrients, medical 
-                  technology, packaging, and construction. This transformation aims at making us more agile, cost-efficient, and aligning us ever more 
-                  closely to the needs and requirements of our customers.
-
-                  A growing world needs lighter, more fuel-efficient means of transportation, while at the same time meeting rigid safety standards. It needs 
-                  innovative agri-nutrients that allow farmers to grow more food on the same amount of land, as well as improved food packaging to prevent spoilage. 
-                  In these and many other ways, MHI solutions are fundamental to improving our quality of life.
-
-                  Here, you will also discover our commitment to the communities where we live and work; how we protect and sustain the environment we all share; 
-                  our pioneering technology and innovation that builds a better future; the high-quality unique solutions we offer our customers; and, the 
-                  financial return we offer our shareholders.
-
-                  At MHI, we have always found excitement in challenges. As you browse through our website, you will get a sense of the passion, expertise, 
-                  reliability, and innovative nature that we bring to our mission. We call this &apso;Compassionate Growth That Matters&apos;.
-
+                    Here you will find a comprehensive, in-depth review of our company, reflecting the pride of 8,000 
+                    global employees take in our ongoing growth and current success. It also conveys our sense of 
+                    mission and vision—to become the preferred world leader in country-centric economic business 
+                    transformation solutions. Today, change is everywhere.
                   </p>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Our customer's markets are evolving rapidly in response to volatile raw material prices, new feedstocks, 
+                    and new manufacturing trends. Sustainability is often the spur, driving demand for better, cleaner and 
+                    more-efficient products and ways of doing things. For companies that can see potential in these 
+                    challenges, this is a good time to be in business. From its foundation in 2001, MHI has sought to adapt 
+                    quickly to customer needs and requirements.
+                  </p>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    This transformation aims at making us more agile, cost-efficient, and aligning us ever more closely to the 
+                    needs and requirements of our customers. A growing world needs lighter, more fuel-efficient means of 
+                    transportation, while at the same time meeting rigid safety standards. It needs innovative agri-nutrients 
+                    that allow farmers to grow more food on the same amount of land, as well as improved food packaging to 
+                    prevent spoilage. In these and many other ways, MHI solutions are fundamental to improving our quality of life.
+                  </p>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    At MHI, we have always found excitement in challenges. As you browse through our website, you will get a sense 
+                    of the passion, expertise, reliability, and innovative nature that we bring to our mission. We call this 
+                    compassionate <b>"Growth That Matters"</b>.
+                  </p>
+                  <p className="mb-3 font-bold text-gray-500 dark:text-gray-400">
+                    Arnold Mexus Darnell <br/>
+                    Chairman & Founder <br/>
+                    MHI
+                  </p>
+
               </div>
           </div>
           

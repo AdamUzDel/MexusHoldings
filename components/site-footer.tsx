@@ -120,8 +120,8 @@ export function SiteFooter() {
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-blue-300 flex-shrink-0 mt-1" />
                 <span className="text-blue-200">
-                  P.O. Box 5514, Dubai, UAE. Levels 20, 48 Burj Gate Towers
-                  Sheikh Zayed Rd - Dubai - United Arab Emirates
+                  P.O. Box 5514, Dubai, UAE. <br/>
+                  Level 20, Burj Gate Tower, Sheikh Zayed Road - Dubai - UAE
                 </span>
               </li>
               <li className="flex items-center">

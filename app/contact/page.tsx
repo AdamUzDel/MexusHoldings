@@ -208,7 +208,7 @@ export default function ContactPage() {
             <div>
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-8">
                 <Image
-                  src="/investment.jpg?height=400&width=600"
+                  src="/office_front.jpg?height=400&width=600"
                   alt="Our office location"
                   fill
                   className="object-cover"

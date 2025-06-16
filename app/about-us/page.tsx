@@ -174,7 +174,7 @@ export default function AboutUsPage() {
                     transformation solutions. Today, change is everywhere.
                   </p>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Our customer's markets are evolving rapidly in response to volatile raw material prices, new feedstocks, 
+                    Our customer&apos;s markets are evolving rapidly in response to volatile raw material prices, new feedstocks, 
                     and new manufacturing trends. Sustainability is often the spur, driving demand for better, cleaner and 
                     more-efficient products and ways of doing things. For companies that can see potential in these 
                     challenges, this is a good time to be in business. From its foundation in 2001, MHI has sought to adapt 
@@ -190,7 +190,7 @@ export default function AboutUsPage() {
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     At MHI, we have always found excitement in challenges. As you browse through our website, you will get a sense 
                     of the passion, expertise, reliability, and innovative nature that we bring to our mission. We call this 
-                    compassionate <b>"Growth That Matters"</b>.
+                    compassionate <b> &quot;Growth That Matters&quot;</b>.
                   </p>
                   <p className="mb-3 font-bold text-gray-500 dark:text-gray-400">
                     Arnold Mexus Darnell <br/>

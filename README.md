@@ -2,7 +2,7 @@
 
 A modern, responsive investment platform website built for Mexus Holdings International, facilitating investment opportunities across East Africa's key economic sectors.
 
-![Mexus Holdings International](https://via.placeholder.com/1200x600/1e3a8a/ffffff?text=Mexus+Holdings+International)
+![Mexus Holdings International](https://mexusholdings.com/mexus-logo-blue.png)
 
 ## 🌟 Features
 
@@ -53,46 +53,46 @@ A modern, responsive investment platform website built for Mexus Holdings Intern
 ### Setup Instructions
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/your-username/mexus-holdings-international.git
+   ```bash
+   git clone https://github.com/AdamUzDel/MexusHoldings.git
    cd mexus-holdings-international
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
    # or
    pnpm install
-   \`\`\`
+   ```
 
 3. **Environment Setup**
-   Create a \`.env.local\` file in the root directory:
-   \`\`\`env
+   Create a `.env.local` file in the root directory:
+   ```env
    # Formspree Configuration
    NEXT_PUBLIC_FORMSPREE_CONTACT_ENDPOINT=https://formspree.io/f/your-contact-form-id
    NEXT_PUBLIC_FORMSPREE_INVESTMENT_ENDPOINT=https://formspree.io/f/your-investment-form-id
    
    # Google Analytics (Optional)
    NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-   \`\`\`
+   ```
 
 4. **Run the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
    # or
    pnpm dev
-   \`\`\`
+   ```
 
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🏗️ Project Structure
 
-\`\`\`
+```
 mexus-holdings-international/
 ├── app/                          # Next.js App Router pages
 │   ├── about-us/                 # About Us pages
@@ -134,13 +134,13 @@ mexus-holdings-international/
 ├── lib/                          # Utility functions
 ├── public/                       # Static assets
 └── README.md                     # Project documentation
-\`\`\`
+```
 
 ## 🎯 Usage
 
 ### For Investors
 1. **Browse Investment Opportunities** - Explore different sectors and investment solutions
-2. **Start Investment Journey** - Use the multi-step application process at \`/get-started\`
+2. **Start Investment Journey** - Use the multi-step application process at `/get-started`
 3. **Contact Team** - Reach out through the contact form for inquiries
 
 ### For Administrators
@@ -156,23 +156,23 @@ mexus-holdings-international/
 3. Configure email notifications and auto-responses
 
 ### SEO Configuration
-1. Update \`app/layout.tsx\` with your Google verification code
-2. Submit \`sitemap.xml\` to Google Search Console
+1. Update `app/layout.tsx` with your Google verification code
+2. Submit `sitemap.xml` to Google Search Console
 3. Configure Google Analytics (optional)
 
 ### Theme Customization
-- Modify \`tailwind.config.ts\` for custom colors and styling
-- Update \`app/globals.css\` for global style overrides
-- Customize components in \`components/ui/\` directory
+- Modify `tailwind.config.ts` for custom colors and styling
+- Update `app/globals.css` for global style overrides
+- Customize components in `components/ui/` directory
 
 ## 🤝 Contributing
 
 We welcome contributions to improve Mexus Holdings International website. Please follow these steps:
 
 1. **Fork the repository**
-2. **Create a feature branch** (\`git checkout -b feature/amazing-feature\`)
-3. **Commit your changes** (\`git commit -m 'Add some amazing feature'\`)
-4. **Push to the branch** (\`git push origin feature/amazing-feature\`)
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add some amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
 5. **Open a Pull Request**
 
 ### Development Guidelines
@@ -201,7 +201,7 @@ We welcome contributions to improve Mexus Holdings International website. Please
 ### Other Platforms
 - **Netlify** - Connect GitHub repo and deploy
 - **AWS Amplify** - Full-stack deployment option
-- **Traditional Hosting** - Build with \`npm run build\` and serve static files
+- **Traditional Hosting** - Build with `npm run build` and serve static files
 
 ## 📄 License
 
@@ -209,7 +209,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Developer
 
-**Designed and Developed by [BytebaseTech](https://bytebasetechnologies.com)**
+**Designed and Developed by [BytebaseTech](https://bytebasetech.com)**
 
 BytebaseTech specializes in creating modern, scalable web applications and digital solutions for businesses across East Africa and beyond.
 
@@ -221,8 +221,8 @@ BytebaseTech specializes in creating modern, scalable web applications and digit
 - UI/UX Design
 
 **Contact BytebaseTech:**
-- Website: [https://bytebasetechnologies.com](https://bytebasetechnologies.com)
-- Email: info@bytebasetechnologies.com
+- Website: [https://bytebasetech.com](https://bytebasetech.com)
+- Email: support@bytebasetechnologies.com
 
 ## 📞 Support
 
@@ -234,7 +234,7 @@ For technical support or questions about this project:
 - Phone: +256-772972249
 
 **Development Support**
-- Developer: [BytebaseTech](https://bytebasetechnologies.com)
+- Developer: [BytebaseTech](https://bytebasetech.com)
 - Technical Issues: Create an issue in this repository
 
 ## 🙏 Acknowledgments
@@ -247,4 +247,4 @@ For technical support or questions about this project:
 
 ---
 
-**Built with ❤️ by [BytebaseTech](https://bytebasetechnologies.com) for Mexus Holdings International**
+**Built with ❤️ by [BytebaseTech](https://bytebasetech.com) for Mexus Holdings International**

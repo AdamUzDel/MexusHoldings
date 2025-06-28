@@ -161,7 +161,7 @@ export function SiteFooter() {
             <div className="text-blue-300">
               Designed by{" "}
               <a
-                href="https://bytebasetechnologies.com"
+                href="https://bytebasetech.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-200 hover:text-white transition-colors font-medium"

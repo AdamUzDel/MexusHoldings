@@ -87,7 +87,7 @@ export default function GetStartedPage() {
         _replyto: formData.email,
       }
 
-      // Submit to Formspree (you'll need to create a separate endpoint for investment forms)
+      // Submit to Formspree (need to create a separate endpoint for investment forms)
       await axios.post("https://formspree.io/f/mzzggzvw", submissionData, {
         headers: {
           "Content-Type": "application/json",

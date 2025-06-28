@@ -133,27 +133,42 @@ export function SiteFooter() {
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-blue-300 flex-shrink-0" />
                 <a href="mailto:info@mexusholdings.com" className="text-blue-200 hover:text-white transition-colors">
-                  chairman@mexusholdings.com 
+                  info@mexusholdings.com 
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
+        
+
         <div className="border-t border-blue-900 mt-8 pt-8 text-center md:flex md:justify-between md:text-left">
           <p className="text-blue-300 text-sm">
             &copy; {new Date().getFullYear()} Mexus Holdings International. All rights reserved.
           </p>
-          <div className="mt-4 md:mt-0 space-x-4 text-sm">
-            <Link href="/privacy-policy" className="text-blue-300 hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-of-service" className="text-blue-300 hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="/sitemap" className="text-blue-300 hover:text-white transition-colors">
-              Sitemap
-            </Link>
+          <div className="mt-4 md:mt-0 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-sm">
+            <div className="flex space-x-4">
+              <Link href="/privacy-policy" className="text-blue-300 hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-service" className="text-blue-300 hover:text-white transition-colors">
+                Terms of Service
+              </Link>
+              <Link href="/sitemap" className="text-blue-300 hover:text-white transition-colors">
+                Sitemap
+              </Link>
+            </div>
+            <div className="text-blue-300">
+              Designed by{" "}
+              <a
+                href="https://bytebasetechnologies.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-200 hover:text-white transition-colors font-medium"
+              >
+                BytebaseTech
+              </a>
+            </div>
           </div>
         </div>
       </div>

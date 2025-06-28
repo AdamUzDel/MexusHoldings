@@ -1,6 +1,11 @@
 {
-  "name": "Mexus Holdings",
-  "short_name": "Mexus",
+  "name": "Mexus Holdings International",
+  "short_name": "Mexus Holdings",
+  "description": "Trusted investment partner managing funds for local and international investors across diverse sectors in East Africa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -14,8 +19,5 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ],
-  "theme_color": "#001ddb",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }
